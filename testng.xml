@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Salesforec Automation" parallel="tests" thread-count="6">
+  <test name="Test with Firefox">
+  <parameter name="browser" value="Firefox" />
+    <classes>
+      <class name="TestScripts.NewTest"/>
+    </classes>
+  </test> 
+  <test name="Test with Chrome">
+  <parameter name="browser" value="Chrome" />
+    <classes>
+      <class name="TestScripts.NewTest"/>
+    </classes>
+  </test> 
+  <test name="Test with Android">
+  <parameter name="browser" value="Android" />
+    <classes>
+      <class name="TestScripts.MobileTest"/>
+    </classes>
+  </test>
+  <!-- <test name="Test with Android2">
+  <parameter name="browser" value="Android2" />
+    <classes>
+      <class name="TestScripts.MobileTest"/>
+    </classes>
+  </test> -->
+  <test name="Test with IE">
+  <parameter name="browser" value="IE" />
+    <classes>
+      <class name="TestScripts.NewTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

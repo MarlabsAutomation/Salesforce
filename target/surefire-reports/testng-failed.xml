@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" verbose="0" name="Failed suite [Salesforec Automation]" parallel="tests">
+  <parameter name="browser" value="IE"/>
+  <test name="Test with Android(failed)" parallel="tests" preserve-order="true">
+    <parameter name="browser" value="Android"/>
+    <classes>
+      <class name="TestScripts.NewTest">
+        <methods>
+          <include name="setUP"/>
+          <include name="setUP"/>
+          <include name="setUP"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="initialise"/>
+          <include name="initialise"/>
+          <include name="initialise"/>
+          <include name="cleanUP"/>
+          <include name="cleanUP"/>
+          <include name="cleanUP"/>
+        </methods>
+      </class> <!-- TestScripts.NewTest -->
+      <class name="TestScripts.MobileTest">
+        <methods>
+          <include name="setUP"/>
+          <include name="mob"/>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- TestScripts.MobileTest -->
+    </classes>
+  </test> <!-- Test with Android(failed) -->
+  <test name="Test with Firefox(failed)" parallel="tests" preserve-order="true">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="TestScripts.NewTest">
+        <methods>
+          <include name="setUP"/>
+          <include name="setUP"/>
+          <include name="setUP"/>
+          <include name="initialise"/>
+          <include name="initialise"/>
+          <include name="initialise"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="Testing" invocation-numbers="0"/>
+          <include name="cleanUP"/>
+          <include name="cleanUP"/>
+          <include name="cleanUP"/>
+        </methods>
+      </class> <!-- TestScripts.NewTest -->
+      <class name="TestScripts.MobileTest">
+        <methods>
+          <include name="setUP"/>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- TestScripts.MobileTest -->
+    </classes>
+  </test> <!-- Test with Firefox(failed) -->
+</suite> <!-- Failed suite [Salesforec Automation] -->
